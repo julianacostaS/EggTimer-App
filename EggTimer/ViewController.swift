@@ -10,5 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+   /* override func viewDidLoad() {
+        super.viewDidLoad()
+    } */
+   
+    
+    @IBAction func hardnessSelected(_ sender: UIButton) {
+   
+        print(sender.currentTitle! )
+    }
 }
