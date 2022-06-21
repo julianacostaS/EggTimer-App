@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-   /* override func viewDidLoad() {
-        super.viewDidLoad()
-    } */
+    let eggTimes = ["Soft": 5, "Medium": 8, "Hard": 12]
    
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
    
-        print(sender.currentTitle! )
+        let hardness = sender.currentTitle
+        
+        if hardness == "Soft" {
+            print(eggTimes["Soft"]!)
+        } else if hardness == "Medium" {
+            print(eggTimes["Medium"]!)
+        } else {
+            print(eggTimes["Hard"]!)
+        }
     }
 }
